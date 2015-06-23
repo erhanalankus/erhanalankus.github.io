@@ -47,8 +47,7 @@ aside p {
 ul#navbar {
     padding: 0;
     float:left;
-    margin-top:20px;
-    
+    margin-top:20px;    
 }
 
 ul#navbar li {
@@ -68,4 +67,72 @@ ul#navbar li a {
 
 ul#navbar li a:hover {
     background-color: #FFFF00;
+}
+
+            p#info {
+                background-color: tomato;
+                margin-top: 0;
+                height: 20px;
+                text-align: center;
+                padding: 5px;
+                font-size: 1.25em;            
+            }
+            div.ui{
+                height: 140px;
+                width: 140px;
+                border: 1px solid black;
+                float: left;
+                margin-left: 10px;            
+            }
+            p.ui{
+                text-align: center;
+                margin: 5px;
+                font-size: 7em;
+            }
+            div.sayilar{
+                float: left;
+                height: 75px;
+                width: 75px;
+                border: 1px solid black;
+                margin: 3px;
+                margin-top: 50px;
+                background-color: white;
+            }
+            div.sayilar p{
+                text-align: center;
+                font-size: 3em;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            div#minus{
+                margin-left: 20px;
+                background-color: #FF8A6C;
+                cursor: pointer;
+            }
+            div#plus{
+                background-color: #B8FF94;
+                cursor: pointer;
+            }
+            div#value{
+                background-color: yellow;
+            }
+            div#getir{
+                background-color: #B5FFDA;
+                height: 60px;
+                width: 170px;
+                border: 1px solid black;
+                margin-left: 157px;
+                margin-top: 150px;
+                cursor: pointer;
+            }
+            p#getir{
+                text-align: center;
+                font-size: 2.9em;
+                font-weight: bold;         
+                margin-top: 2px;
+            }
+            
+#kartlar{    
+     margin-top:-10px; 
+     margin-left:24px
 }
