@@ -21,11 +21,14 @@
     </nav>
 
     <aside>
-        <p>Bu site, evimde bulunan Orange Pi Zero üzerinden sunulmaktadır.</p>        
+        <p>Bu site, evimde bulunan Orange Pi Zero üzerinden sunulmaktadır.</p>
     </aside>
 
     <article>
-        <p id="geo"></p>
+        <button onclick="myFunction()">Konum tespit</button>
+        <ul id="myList">
+
+        </ul>
     </article>
 
     <footer>
@@ -38,6 +41,50 @@
             document.getElementById('geo').innerHTML = 'geolocation is not available';
         }
 
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+
+        function success(pos) {
+            var crd = pos.coords;
+
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode('Your current position is:');
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode(`Latitude : ${crd.latitude}`);
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode(`Longitude: ${crd.longitude}`);
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode(`More or less ${crd.accuracy} meters.`);
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+        };
+
+        function error(err) {
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode(`ERROR(${err.code}): ${err.message}`);
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+        };
+
+        function myFunction() {
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode("Starting...");
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+            navigator.geolocation.getCurrentPosition(success, error, options);
+        }
     </script>
 
 </body>
