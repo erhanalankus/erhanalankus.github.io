@@ -20,6 +20,7 @@
 
     <aside>
         <p>Bu site, evimde bulunan Orange Pi Zero üzerinden sunulmaktadır.</p>
+        <p id="geo"></p>
     </aside>
 
     <article>
@@ -29,6 +30,14 @@
     <footer>
         <p>Hiç bir hakkı saklı değildir. 2014.</p>
     </footer>
+    <script>
+        if ("geolocation" in navigator) {
+            document.getElementById('geo').innerHTML = 'geolocation is available';
+        } else {
+            document.getElementById('geo').innerHTML = 'geolocation is not available';
+        }
+
+    </script>
 
 </body>
 
