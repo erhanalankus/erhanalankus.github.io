@@ -1,6 +1,5 @@
 ---
-layout: default
-title: About Page
+title: _About Page_
 ---
 
 # About Page
