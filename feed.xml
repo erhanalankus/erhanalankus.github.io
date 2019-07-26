@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-25T15:01:32+03:00</updated><id>/feed.xml</id><title type="html">Erhan Alankuş</title><subtitle>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</subtitle><entry><title type="html">Zarupa Core Devcamp Ders Notları (Telafi 1)</title><link href="/2019/07/25/zarupa-core-devcamp-ders-notlari-telafi1.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (Telafi 1)" /><published>2019-07-25T00:00:00+03:00</published><updated>2019-07-25T00:00:00+03:00</updated><id>/2019/07/25/zarupa-core-devcamp-ders-notlari-telafi1</id><content type="html" xml:base="/2019/07/25/zarupa-core-devcamp-ders-notlari-telafi1.html">&lt;h1 id=&quot;zarupa-core-devcamp-ders-notları&quot;&gt;Zarupa Core Devcamp Ders Notları&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-26T16:22:24+03:00</updated><id>/feed.xml</id><title type="html">Erhan Alankuş</title><subtitle>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</subtitle><entry><title type="html">Zarupa Core Devcamp Ders Notları (Telafi 2)</title><link href="/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (Telafi 2)" /><published>2019-07-26T00:00:00+03:00</published><updated>2019-07-26T00:00:00+03:00</updated><id>/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2</id><content type="html" xml:base="/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2.html">&lt;h1 id=&quot;zarupa-core-devcamp-ders-notları&quot;&gt;Zarupa Core Devcamp Ders Notları&lt;/h1&gt;
+&lt;h2 id=&quot;telafi-2-İkinci-10-saatin-4-saate-sıkıştırılmış-telafisi&quot;&gt;Telafi 2 (İkinci 10 saatin 4 saate sıkıştırılmış telafisi)&lt;/h2&gt;
+&lt;p&gt;Bugün, müfredatın aşağıda listelediğim kısımları üzerinde durmamız gerekiyordu, fakat zaman yetişmedi, eksik kalan kısımların telafisini zamana yaymaya karar verdik.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.7. Symbolic and hard links
+1.8. Compression and archiving
+1.9. Search and find
+1.10. Package management
+1.11. Process management
+1.12. Update, upgrade, backup
+1.13. Scheduled tasks
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;dmesg komutunu inceledik, bilgisayar açıldığından beri olan her şeyin oraya not düşülmüş olduğunu gördük. Daha sonra bilgisayara bir flash disk bağladığımızda onunla ilgili yapılmış işlemlerin oraya eklendiğini gördük.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface&quot;&gt;ACPI&lt;/a&gt; ve &lt;a href=&quot;https://en.wikipedia.org/wiki/Advanced_Host_Controller_Interface&quot;&gt;AHCI&lt;/a&gt;‘den çok kısa bahsettik.&lt;/p&gt;
+
+&lt;p&gt;/etc/systemd/system/sysinit.target.wants ‘a göz attık.&lt;/p&gt;
+
+&lt;p&gt;AHCI’nin buglarıyla community’yi hep üzdüğüne değindik.&lt;/p&gt;
+
+&lt;p&gt;whois komutuyla aldığımız bilgideki adresin, geolocation’a dair bir ipucu vermediğini belirttik.&lt;/p&gt;
+
+&lt;p&gt;/dev/ klasörünü inceledik. Oradaki device’ları gördük.&lt;/p&gt;
+
+&lt;p&gt;df -kh komutu ile makinamızdaki tüm partition’ları gördük.&lt;/p&gt;
+
+&lt;p&gt;man komutuyla manual’ı çağırdığımızda gelen sayfaları less ile görüntülüyoruz gibi bir şey söyledik.&lt;/p&gt;
+
+&lt;p&gt;D-Bus’ın interprocess communication(IPC) ile ilgili bir şey olduğunu söyledik. Şu linki incele: &lt;a href=&quot;https://dbus.freedesktop.org/doc/dbus-tutorial.html&quot;&gt;https://dbus.freedesktop.org/doc/dbus-tutorial.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Disklere &lt;a href=&quot;https://en.wikipedia.org/wiki/Universally_unique_identifier&quot;&gt;UUID&lt;/a&gt; atandığını ve disklerin o UUID’ler ile tanındığını söyledik.&lt;/p&gt;
+
+&lt;p&gt;Her dosyanın SUID’si, SGID’si var gibi bir şeyler söyledik, tamamlamadık. Bu konu bana ödev verildi.&lt;/p&gt;
+
+&lt;p&gt;Konsolda iyi, ne yaptığını bilen kişiler olmamız gerektiğini konuştuk.&lt;/p&gt;
+
+&lt;p&gt;file /dev/sda komutu ile bunun bir block special (8/0) olduğunu gördük. Disk’e block device dendiğini söyledik.&lt;/p&gt;
+
+&lt;p&gt;ls /proc/ ile process’leri gördük.&lt;/p&gt;
+
+&lt;p&gt;Ctrl+K kısayolu ile cursor’ın sağını uçurabileceğimizi gördük.&lt;/p&gt;
+
+&lt;p&gt;cat /proc/partitions ile partition’lara göz attık.&lt;/p&gt;
+
+&lt;p&gt;sda, sdb şeklinde disk identifer’lar var. Bunlar eskiden hd ile başlıyormuş, şimdi sd ile başlıyor. sr0 ile cdrom sürücü veya benzeri drive işaret ediliyor.&lt;/p&gt;
+
+&lt;p&gt;home klasörümüzü ayrı bir partition’a koyarsak işletim sistemine yapacağımız büyük değişikler, dosyalarımızı etkilemez.&lt;/p&gt;
+
+&lt;p&gt;RAM bitince diskteki SWAP alanı kullanılır. Bu alanda özel bir dosya sistemi kullanıldığı için hızlı çalışır.&lt;/p&gt;
+
+&lt;p&gt;Disk, aniden ulaşılamaz hale gelirse “kernel panic” durumu yaşanır.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Loop_device&quot;&gt;Loop Device&lt;/a&gt; : is a pseudo-device that makes a file accessible as a block device.&lt;/p&gt;
+
+&lt;p&gt;Ctrl+W ile bir kelime silebiliriz.&lt;/p&gt;
+
+&lt;p&gt;mount komutu ile mount edilmiş her şeyi görürüz. Diskler için sda ve sdb’leri ara.&lt;/p&gt;
+
+&lt;p&gt;htop, çalışan processleri izlemek için güzel bir alternatif, yükledik.&lt;/p&gt;
+
+&lt;p&gt;mkdir ve touch ile bol bol oynadık, basit bir for döngüzü yazdık.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	for i in {01..20}; do touch file-$i; done;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dosya isimlerinde boşluk, türkçe harf, ‘-‘ harici özel karakter kullanmıyoruz.&lt;/p&gt;
+
+&lt;p&gt;Klasörlerdeki parent-child ilişkilerini konuştuk. Bol bol cp yaptık. mv’nin recursion’a takılmadığını, -r eklemek gerekmediğini gördük.&lt;/p&gt;
+
+&lt;p&gt;Bash’te yazmakta olduğumuz satırda, bulunduğumuz klasörü gösteren kısmın solundaki kısma(bende erhan@erhan-Lenovo-Z50-70: olarak geçiyor) ps1 diyormuşuz.&lt;/p&gt;
+
+&lt;p&gt;Absolute ve relative path’ler üzerinde durduk.&lt;/p&gt;
+
+&lt;p&gt;tar kullandık. Arşivledik, açtık. tar’ın sıkıştırma yapmadığını, sıkıştırma yapmak için farklı sıkıştırma algoritmaları kullanabileceğimizi gördük. Bash’teki autocomplete’in bu kullanılmış algoritmaları hesaba katarak autocomplete yaptığını gördük.&lt;/p&gt;
+
+&lt;p&gt;Asla rm -rf yapmamamız gerektiğini söyledik. Linux’ta kullanıcı hareketleri regüle edilmez, bu güzel bir şeydir, ama dikkatli olmazsak makinamızı bozabiliriz.&lt;/p&gt;
+
+&lt;p&gt;ln ‘ye bir göz attık. Symbolic link yaptık. Kaynak dosyayı silince, symbolic link’in broken state’e geçtiğini gördük.&lt;/p&gt;
+
+&lt;p&gt;history komutu ile Linux’u yüklediğimizden beri girmiş olduğumuz tüm komutları gördük. .bashrc’de HISTSIZE ve HISTFILESIZE’a üç sıfır ekledik.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/junegunn/fzf&quot;&gt;Command-line fuzzy finder&lt;/a&gt; yükledik. Ctrl+R ile eski girilmiş komutları arama kısmı çok daha lezzetli oldu.&lt;/p&gt;
+
+&lt;p&gt;env komutu ile environment variable’ları gördük.&lt;/p&gt;
+
+&lt;p&gt;Umarım önemli bir şey atlamamışımdır.&lt;/p&gt;
+
+&lt;p&gt;Sevgiler,&lt;/p&gt;
+
+&lt;p&gt;Erhan&lt;/p&gt;</content><author><name></name></author><summary type="html">Zarupa Core Devcamp Ders Notları Telafi 2 (İkinci 10 saatin 4 saate sıkıştırılmış telafisi) Bugün, müfredatın aşağıda listelediğim kısımları üzerinde durmamız gerekiyordu, fakat zaman yetişmedi, eksik kalan kısımların telafisini zamana yaymaya karar verdik. 1.7. Symbolic and hard links 1.8. Compression and archiving 1.9. Search and find 1.10. Package management 1.11. Process management 1.12. Update, upgrade, backup 1.13. Scheduled tasks dmesg komutunu inceledik, bilgisayar açıldığından beri olan her şeyin oraya not düşülmüş olduğunu gördük. Daha sonra bilgisayara bir flash disk bağladığımızda onunla ilgili yapılmış işlemlerin oraya eklendiğini gördük. ACPI ve AHCI‘den çok kısa bahsettik. /etc/systemd/system/sysinit.target.wants ‘a göz attık. AHCI’nin buglarıyla community’yi hep üzdüğüne değindik. whois komutuyla aldığımız bilgideki adresin, geolocation’a dair bir ipucu vermediğini belirttik. /dev/ klasörünü inceledik. Oradaki device’ları gördük. df -kh komutu ile makinamızdaki tüm partition’ları gördük. man komutuyla manual’ı çağırdığımızda gelen sayfaları less ile görüntülüyoruz gibi bir şey söyledik. D-Bus’ın interprocess communication(IPC) ile ilgili bir şey olduğunu söyledik. Şu linki incele: https://dbus.freedesktop.org/doc/dbus-tutorial.html. Disklere UUID atandığını ve disklerin o UUID’ler ile tanındığını söyledik. Her dosyanın SUID’si, SGID’si var gibi bir şeyler söyledik, tamamlamadık. Bu konu bana ödev verildi. Konsolda iyi, ne yaptığını bilen kişiler olmamız gerektiğini konuştuk. file /dev/sda komutu ile bunun bir block special (8/0) olduğunu gördük. Disk’e block device dendiğini söyledik. ls /proc/ ile process’leri gördük. Ctrl+K kısayolu ile cursor’ın sağını uçurabileceğimizi gördük. cat /proc/partitions ile partition’lara göz attık. sda, sdb şeklinde disk identifer’lar var. Bunlar eskiden hd ile başlıyormuş, şimdi sd ile başlıyor. sr0 ile cdrom sürücü veya benzeri drive işaret ediliyor. home klasörümüzü ayrı bir partition’a koyarsak işletim sistemine yapacağımız büyük değişikler, dosyalarımızı etkilemez. RAM bitince diskteki SWAP alanı kullanılır. Bu alanda özel bir dosya sistemi kullanıldığı için hızlı çalışır. Disk, aniden ulaşılamaz hale gelirse “kernel panic” durumu yaşanır. Loop Device : is a pseudo-device that makes a file accessible as a block device. Ctrl+W ile bir kelime silebiliriz. mount komutu ile mount edilmiş her şeyi görürüz. Diskler için sda ve sdb’leri ara. htop, çalışan processleri izlemek için güzel bir alternatif, yükledik. mkdir ve touch ile bol bol oynadık, basit bir for döngüzü yazdık. for i in {01..20}; do touch file-$i; done; Dosya isimlerinde boşluk, türkçe harf, ‘-‘ harici özel karakter kullanmıyoruz. Klasörlerdeki parent-child ilişkilerini konuştuk. Bol bol cp yaptık. mv’nin recursion’a takılmadığını, -r eklemek gerekmediğini gördük. Bash’te yazmakta olduğumuz satırda, bulunduğumuz klasörü gösteren kısmın solundaki kısma(bende erhan@erhan-Lenovo-Z50-70: olarak geçiyor) ps1 diyormuşuz. Absolute ve relative path’ler üzerinde durduk. tar kullandık. Arşivledik, açtık. tar’ın sıkıştırma yapmadığını, sıkıştırma yapmak için farklı sıkıştırma algoritmaları kullanabileceğimizi gördük. Bash’teki autocomplete’in bu kullanılmış algoritmaları hesaba katarak autocomplete yaptığını gördük. Asla rm -rf yapmamamız gerektiğini söyledik. Linux’ta kullanıcı hareketleri regüle edilmez, bu güzel bir şeydir, ama dikkatli olmazsak makinamızı bozabiliriz. ln ‘ye bir göz attık. Symbolic link yaptık. Kaynak dosyayı silince, symbolic link’in broken state’e geçtiğini gördük. history komutu ile Linux’u yüklediğimizden beri girmiş olduğumuz tüm komutları gördük. .bashrc’de HISTSIZE ve HISTFILESIZE’a üç sıfır ekledik. Command-line fuzzy finder yükledik. Ctrl+R ile eski girilmiş komutları arama kısmı çok daha lezzetli oldu. env komutu ile environment variable’ları gördük. Umarım önemli bir şey atlamamışımdır. Sevgiler, Erhan</summary></entry><entry><title type="html">Zarupa Core Devcamp Ders Notları (Telafi 1)</title><link href="/2019/07/25/zarupa-core-devcamp-ders-notlari-telafi1.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (Telafi 1)" /><published>2019-07-25T00:00:00+03:00</published><updated>2019-07-25T00:00:00+03:00</updated><id>/2019/07/25/zarupa-core-devcamp-ders-notlari-telafi1</id><content type="html" xml:base="/2019/07/25/zarupa-core-devcamp-ders-notlari-telafi1.html">&lt;h1 id=&quot;zarupa-core-devcamp-ders-notları&quot;&gt;Zarupa Core Devcamp Ders Notları&lt;/h1&gt;
 &lt;h2 id=&quot;telafi-1-İlk-10-saatin-4-saate-sıkıştırılmış-telafisi&quot;&gt;Telafi 1 (İlk 10 saatin 4 saate sıkıştırılmış telafisi)&lt;/h2&gt;
 &lt;p&gt;Bugün, müfredatın aşağıda listelediğim kısımları üzerinde durduk:&lt;/p&gt;
 
