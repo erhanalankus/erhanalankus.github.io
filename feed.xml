@@ -1,4 +1,114 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-26T16:22:24+03:00</updated><id>/feed.xml</id><title type="html">Erhan Alankuş</title><subtitle>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</subtitle><entry><title type="html">Zarupa Core Devcamp Ders Notları (Telafi 2)</title><link href="/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (Telafi 2)" /><published>2019-07-26T00:00:00+03:00</published><updated>2019-07-26T00:00:00+03:00</updated><id>/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2</id><content type="html" xml:base="/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2.html">&lt;h1 id=&quot;zarupa-core-devcamp-ders-notları&quot;&gt;Zarupa Core Devcamp Ders Notları&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-07-27T09:58:18+03:00</updated><id>/feed.xml</id><title type="html">Erhan Alankuş</title><subtitle>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</subtitle><entry><title type="html">Zarupa Core Devcamp Ders Notları (4. Gün)</title><link href="/2019/07/26/zarupa-core-devcamp-ders-notlari-gun4.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (4. Gün)" /><published>2019-07-26T00:00:00+03:00</published><updated>2019-07-26T00:00:00+03:00</updated><id>/2019/07/26/zarupa-core-devcamp-ders-notlari-gun4</id><content type="html" xml:base="/2019/07/26/zarupa-core-devcamp-ders-notlari-gun4.html">&lt;h2 id=&quot;4-gün-20-ve-24-saatler-arası&quot;&gt;4. Gün (20. ve 24. saatler arası)&lt;/h2&gt;
+
+&lt;p&gt;Bugünün gündemi bash ve vim idi, fakat başlangıçta package management konusunun üzerinden geçtik.&lt;/p&gt;
+
+&lt;p&gt;Uygulama kurarken version, description, nereye kuruluyor, paket bağımlılıkları var mı, paket bazı şeyleri kırabilir mi?&lt;/p&gt;
+
+&lt;p&gt;.deb dosyaları arşiv dosyları. zip değil ar kullanıyor.&lt;/p&gt;
+
+&lt;p&gt;apt-cache policy [paket adı]&lt;/p&gt;
+
+&lt;p&gt;apt show&lt;/p&gt;
+
+&lt;p&gt;lib ile başlayanlar library demek, executable’ları yok, uygulamalar bu library’leri kullanıyor.&lt;/p&gt;
+
+&lt;p&gt;suggests kısmında belirtilenleri de kursak iyi olur.&lt;/p&gt;
+
+&lt;p&gt;dpkg -l, sistemde kurulu tüm paketleri gösterir.
+dpkg -L, paketin bileşenlerinin yerlerini gösterir.&lt;/p&gt;
+
+&lt;p&gt;/var/cache/apt/archives/ klasöründe yüklenmiş deb dosyaları saklanıyor&lt;/p&gt;
+
+&lt;p&gt;sudo du -csh /var/cache/apt/archives/ ile bunların diskte kapladığı yeri gördük.&lt;/p&gt;
+
+&lt;p&gt;Çekeceğimiz her şeyde sürüm çok önemli.&lt;/p&gt;
+
+&lt;p&gt;cat /etc/lsb-release ile sistem bilgilerimizi gördük
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=18.04
+DISTRIB_CODENAME=bionic
+DISTRIB_DESCRIPTION=”Ubuntu 18.04.2 LTS”&lt;/p&gt;
+
+&lt;p&gt;/etc/apt/sources.list’de paketler için kullanılan kaynakları gördük.&lt;/p&gt;
+
+&lt;p&gt;Paketleri güncellemek için:
+sudo apt update
+sudo apt upgrade&lt;/p&gt;
+
+&lt;p&gt;Sunucuda kafamıza göre güncelleme yapmıyoruz.&lt;/p&gt;
+
+&lt;p&gt;vim’e ctags ekledik, metot isimlerini listeliyor, vs.&lt;/p&gt;
+
+&lt;p&gt;apt remove la paket kaldırınca leftoverlar kalıyor
+configleri değiştirdiysen onlara ellemiyor
+apt purge, configleri falan da siliyor&lt;/p&gt;
+
+&lt;p&gt;nginx çok hızlı. hız, her zaman birinci öncelik değil.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://debgen.simplylinux.ch/&quot;&gt;Debian Sources List Generator&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;POSIX üzerine konuştuk. Herkesin hemfikir olduğu bir sistem, kimse ortamı domine edemesin. Signal’ların, process’lerin vs. standartlarını belirliyor.&lt;/p&gt;
+
+&lt;p&gt;Cron’dan ayrı olarak Kernel’in bir scheduler’ı var.&lt;/p&gt;
+
+&lt;p&gt;htop’da f7 ile process’leri nice etmece. Bi uygulamayı daha önemli olarak işaretlemece, kaynak kullanım önceliği.&lt;/p&gt;
+
+&lt;p&gt;traceroute ile bi URL’e kaç HOP’ta gittiğimize baktık.&lt;/p&gt;
+
+&lt;p&gt;shell, POSIX’in ifade ettiği bir şey.&lt;/p&gt;
+
+&lt;p&gt;Bash nedir’in üzerinde durduk.&lt;/p&gt;
+
+&lt;p&gt;Environmental variable’lar uppercase olur.&lt;/p&gt;
+
+&lt;p&gt;echo $HOME dediğimizde HOME diye bi makrom vardı, bunu expand etmiş oldum.&lt;/p&gt;
+
+&lt;p&gt;cp, mv, ls falan bunlar hep GNU utility.&lt;/p&gt;
+
+&lt;p&gt;Bi dosyaya bash script yazdık, sonra onu komut yaptık(shortdate)&lt;/p&gt;
+
+&lt;p&gt;Bash Reference Manual üzerinde uzunca durduk. Tanımlara baktık. Control operatörlerine baktık.&lt;/p&gt;
+
+&lt;p&gt;&amp;amp;, fg, bg kullandık. Ctrl+Z ile stop ettik. jobs komutu ile arkada bişey kaldı mı kontrol ettik.&lt;/p&gt;
+
+&lt;p&gt;environment variable’a backtick içinde bir komut ataması yaparken komutu çalıştırmaya çalışıyor, komut hata vermezse atama gerçekleşiyor&lt;/p&gt;
+
+&lt;p&gt;paketler kurulurken uzun bi liste görüren iyi oku, hayır de
+gnome env’a bi kde paketi kurmaya çaışırsan bilimum kde paketleri de yanında gelir&lt;/p&gt;
+
+&lt;p&gt;openvim.com&lt;/p&gt;
+
+&lt;p&gt;Vim üzerinde uzunca çalıştık&lt;/p&gt;
+
+&lt;p&gt;y,p copy paste
+v ile seçmeye başldık
+0 ile satırbaşına döndü
+seçerken $ ile sona kadar götürdük
+:x ile xinci satıra gittik
+:set nu&lt;/p&gt;
+
+&lt;p&gt;multiple line insert
+ctrl+v
+down arrow
+shift+ı
+type
+esc&lt;/p&gt;
+
+&lt;p&gt;search and replace: :%s/test/dombak./g&lt;/p&gt;
+
+&lt;p&gt;.bashrc gibi .vimrc var, buradan tüm dosyalarda nu olsun yapabiliriz
+oraya set nu yazdık, oldu
+yanlış bişey yazarsak vim açılırken uyarır&lt;/p&gt;
+
+&lt;p&gt;/ ile search ettik. n, shift+n ile next/previous yaptık.&lt;/p&gt;
+
+&lt;p&gt;vim’in plugin yöneticileri olduğuna değindik.&lt;/p&gt;
+
+&lt;p&gt;Bu seferki notlar biraz özensiz oldu, kusra bakmayın.&lt;/p&gt;
+
+&lt;p&gt;Sevgiler,&lt;/p&gt;
+
+&lt;p&gt;Erhan&lt;/p&gt;</content><author><name></name></author><summary type="html">4. Gün (20. ve 24. saatler arası) Bugünün gündemi bash ve vim idi, fakat başlangıçta package management konusunun üzerinden geçtik. Uygulama kurarken version, description, nereye kuruluyor, paket bağımlılıkları var mı, paket bazı şeyleri kırabilir mi? .deb dosyaları arşiv dosyları. zip değil ar kullanıyor. apt-cache policy [paket adı] apt show lib ile başlayanlar library demek, executable’ları yok, uygulamalar bu library’leri kullanıyor. suggests kısmında belirtilenleri de kursak iyi olur. dpkg -l, sistemde kurulu tüm paketleri gösterir. dpkg -L, paketin bileşenlerinin yerlerini gösterir. /var/cache/apt/archives/ klasöründe yüklenmiş deb dosyaları saklanıyor sudo du -csh /var/cache/apt/archives/ ile bunların diskte kapladığı yeri gördük. Çekeceğimiz her şeyde sürüm çok önemli. cat /etc/lsb-release ile sistem bilgilerimizi gördük DISTRIB_ID=Ubuntu DISTRIB_RELEASE=18.04 DISTRIB_CODENAME=bionic DISTRIB_DESCRIPTION=”Ubuntu 18.04.2 LTS” /etc/apt/sources.list’de paketler için kullanılan kaynakları gördük. Paketleri güncellemek için: sudo apt update sudo apt upgrade Sunucuda kafamıza göre güncelleme yapmıyoruz. vim’e ctags ekledik, metot isimlerini listeliyor, vs. apt remove la paket kaldırınca leftoverlar kalıyor configleri değiştirdiysen onlara ellemiyor apt purge, configleri falan da siliyor nginx çok hızlı. hız, her zaman birinci öncelik değil. Debian Sources List Generator POSIX üzerine konuştuk. Herkesin hemfikir olduğu bir sistem, kimse ortamı domine edemesin. Signal’ların, process’lerin vs. standartlarını belirliyor. Cron’dan ayrı olarak Kernel’in bir scheduler’ı var. htop’da f7 ile process’leri nice etmece. Bi uygulamayı daha önemli olarak işaretlemece, kaynak kullanım önceliği. traceroute ile bi URL’e kaç HOP’ta gittiğimize baktık. shell, POSIX’in ifade ettiği bir şey. Bash nedir’in üzerinde durduk. Environmental variable’lar uppercase olur. echo $HOME dediğimizde HOME diye bi makrom vardı, bunu expand etmiş oldum. cp, mv, ls falan bunlar hep GNU utility. Bi dosyaya bash script yazdık, sonra onu komut yaptık(shortdate) Bash Reference Manual üzerinde uzunca durduk. Tanımlara baktık. Control operatörlerine baktık. &amp;amp;, fg, bg kullandık. Ctrl+Z ile stop ettik. jobs komutu ile arkada bişey kaldı mı kontrol ettik. environment variable’a backtick içinde bir komut ataması yaparken komutu çalıştırmaya çalışıyor, komut hata vermezse atama gerçekleşiyor paketler kurulurken uzun bi liste görüren iyi oku, hayır de gnome env’a bi kde paketi kurmaya çaışırsan bilimum kde paketleri de yanında gelir openvim.com Vim üzerinde uzunca çalıştık y,p copy paste v ile seçmeye başldık 0 ile satırbaşına döndü seçerken $ ile sona kadar götürdük :x ile xinci satıra gittik :set nu multiple line insert ctrl+v down arrow shift+ı type esc search and replace: :%s/test/dombak./g .bashrc gibi .vimrc var, buradan tüm dosyalarda nu olsun yapabiliriz oraya set nu yazdık, oldu yanlış bişey yazarsak vim açılırken uyarır / ile search ettik. n, shift+n ile next/previous yaptık. vim’in plugin yöneticileri olduğuna değindik. Bu seferki notlar biraz özensiz oldu, kusra bakmayın. Sevgiler, Erhan</summary></entry><entry><title type="html">Zarupa Core Devcamp Ders Notları (Telafi 2)</title><link href="/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (Telafi 2)" /><published>2019-07-26T00:00:00+03:00</published><updated>2019-07-26T00:00:00+03:00</updated><id>/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2</id><content type="html" xml:base="/2019/07/26/zarupa-core-devcamp-ders-notlari-telafi2.html">&lt;h1 id=&quot;zarupa-core-devcamp-ders-notları&quot;&gt;Zarupa Core Devcamp Ders Notları&lt;/h1&gt;
 &lt;h2 id=&quot;telafi-2-İkinci-10-saatin-4-saate-sıkıştırılmış-telafisi&quot;&gt;Telafi 2 (İkinci 10 saatin 4 saate sıkıştırılmış telafisi)&lt;/h2&gt;
 &lt;p&gt;Bugün, müfredatın aşağıda listelediğim kısımları üzerinde durmamız gerekiyordu, fakat zaman yetişmedi, eksik kalan kısımların telafisini zamana yaymaya karar verdik.&lt;/p&gt;
 
