@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Zarupa Core Devcamp Ders Notları (8. Gün) | Erhan Alankuş</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Zarupa Core Devcamp Ders Notları (8. Gün)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="8. Gün (44. ve 48. saatler arası) Bugün docker ile haşır neşir olduk. Kendi makinalarımızda mantıklı bir dosya hiyerarşisi, bir directory yaratma stratejisi oluşturmamız iyi olur. ~/development ~/work mkdir komutu ile /x/y/z gibi bi klasör yaratacaksak, y klasörü yoksa onu da yaratsın diye -p kullanabiliriz. $ ne demek idi? Shell prompt demek idi. docker run -it hello-world komutunu girdik, açıklamalarını okuduk. -it demezsek daemon olarak çalışıyor, bir şey görmüyoruz. docker images komutu ile görüyoruz, docker ps ile görmüyoruz, çünkü çalıştı kapandı. docker ps -a ile görebiliyoruz. docker search redis deyince docker hub’da search ediyor. Anlamadığımız imajı kullanmamamız gerekiyor. docker run yaparken name’i ilk parametre olarak kullanmalıyız. bash-it yükledik. bash ile çalışmayı çok kolaylaştırıyor. bash-it show aliases bash-it enable alias docker BASH_PREVIEW=true bash-it reload komutu ile bash-it theme’lerine göz attık. Brave web browser‘ı övdük. Daemon‘un ne olduğunu hatırladık. Bilgisayarda systemd ile çalışan servisler var. systemd, servisleri çalıştırıyor. systemctl list-unit-files grep enabled dbus, interprocess communication’ı sağlıyor. VM’i pull ettim, build ettikten sonra yapmam gereken şeyler için ENTRYPOINT’i kullanıyoruz. DNS, Language, Timezone variable’ları çok önemli! ENTRYPOINT ile VM tamamen kurulduktan, build olduktan sonra yapılacak ayarlar ve kurulacak paketler işlenir. LABEL önemli. overlay2, filesystem’i yönetmek için. Container’larla oynamak diski hemen doldurur, ayık ol. json_pp sudo visudo dedik, açılan dosyaya erhan ALL=NOPASSWD: ALL girdik, artık sudo x dedikten sonra şifre girmemize gerek yok. Bir ebedi gökçe belik kitabını okuyacağız. HOSTPORT:CONTAINERPORT. Soldaki host’a ait, sağdaki container’a ait. portainer, bizim makinedeki containerlar, ıvır-zıvırlar için güzel bir kullanıcı arayüzü sunuyor. https://raft.github.io/ Markdown’ı kullanacağız. zR ile vim’de unfold all yaptık. virbr0, virtual bridge 0 demek. loopback: hiçbiyere bağlı değil devnull gibi bir şey sadece kendisini referans gösteriyo 127.0.0.1 dışarıya açmak istemediğimiz hizmeti buna bindirecez 10, 172,192 ile başlayan ip adresleri subnet içlerinde consul, consulate’ın kısaltılmışı, gözlemliyor, etcd kullanıyor, bilgilendiriyor. DMZ. 80 ve 443 de-militarized zone public-private network ayrımını unutma ingress içeri, egress dışarı http://jodies.de/ipcalc , subnet calculator." />
+<meta property="og:description" content="8. Gün (44. ve 48. saatler arası) Bugün docker ile haşır neşir olduk. Kendi makinalarımızda mantıklı bir dosya hiyerarşisi, bir directory yaratma stratejisi oluşturmamız iyi olur. ~/development ~/work mkdir komutu ile /x/y/z gibi bi klasör yaratacaksak, y klasörü yoksa onu da yaratsın diye -p kullanabiliriz. $ ne demek idi? Shell prompt demek idi. docker run -it hello-world komutunu girdik, açıklamalarını okuduk. -it demezsek daemon olarak çalışıyor, bir şey görmüyoruz. docker images komutu ile görüyoruz, docker ps ile görmüyoruz, çünkü çalıştı kapandı. docker ps -a ile görebiliyoruz. docker search redis deyince docker hub’da search ediyor. Anlamadığımız imajı kullanmamamız gerekiyor. docker run yaparken name’i ilk parametre olarak kullanmalıyız. bash-it yükledik. bash ile çalışmayı çok kolaylaştırıyor. bash-it show aliases bash-it enable alias docker BASH_PREVIEW=true bash-it reload komutu ile bash-it theme’lerine göz attık. Brave web browser‘ı övdük. Daemon‘un ne olduğunu hatırladık. Bilgisayarda systemd ile çalışan servisler var. systemd, servisleri çalıştırıyor. systemctl list-unit-files grep enabled dbus, interprocess communication’ı sağlıyor. VM’i pull ettim, build ettikten sonra yapmam gereken şeyler için ENTRYPOINT’i kullanıyoruz. DNS, Language, Timezone variable’ları çok önemli! ENTRYPOINT ile VM tamamen kurulduktan, build olduktan sonra yapılacak ayarlar ve kurulacak paketler işlenir. LABEL önemli. overlay2, filesystem’i yönetmek için. Container’larla oynamak diski hemen doldurur, ayık ol. json_pp sudo visudo dedik, açılan dosyaya erhan ALL=NOPASSWD: ALL girdik, artık sudo x dedikten sonra şifre girmemize gerek yok. Bir ebedi gökçe belik kitabını okuyacağız. HOSTPORT:CONTAINERPORT. Soldaki host’a ait, sağdaki container’a ait. portainer, bizim makinedeki containerlar, ıvır-zıvırlar için güzel bir kullanıcı arayüzü sunuyor. https://raft.github.io/ Markdown’ı kullanacağız. zR ile vim’de unfold all yaptık. virbr0, virtual bridge 0 demek. loopback: hiçbiyere bağlı değil devnull gibi bir şey sadece kendisini referans gösteriyo 127.0.0.1 dışarıya açmak istemediğimiz hizmeti buna bindirecez 10, 172,192 ile başlayan ip adresleri subnet içlerinde consul, consulate’ın kısaltılmışı, gözlemliyor, etcd kullanıyor, bilgilendiriyor. DMZ. 80 ve 443 de-militarized zone public-private network ayrımını unutma ingress içeri, egress dışarı http://jodies.de/ipcalc , subnet calculator." />
+<link rel="canonical" href="/2019/08/03/zarupa-core-devcamp-ders-notlari-gun8.html" />
+<meta property="og:url" content="/2019/08/03/zarupa-core-devcamp-ders-notlari-gun8.html" />
+<meta property="og:site_name" content="Erhan Alankuş" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-03T00:00:00+03:00" />
+<script type="application/ld+json">
+{"description":"8. Gün (44. ve 48. saatler arası) Bugün docker ile haşır neşir olduk. Kendi makinalarımızda mantıklı bir dosya hiyerarşisi, bir directory yaratma stratejisi oluşturmamız iyi olur. ~/development ~/work mkdir komutu ile /x/y/z gibi bi klasör yaratacaksak, y klasörü yoksa onu da yaratsın diye -p kullanabiliriz. $ ne demek idi? Shell prompt demek idi. docker run -it hello-world komutunu girdik, açıklamalarını okuduk. -it demezsek daemon olarak çalışıyor, bir şey görmüyoruz. docker images komutu ile görüyoruz, docker ps ile görmüyoruz, çünkü çalıştı kapandı. docker ps -a ile görebiliyoruz. docker search redis deyince docker hub’da search ediyor. Anlamadığımız imajı kullanmamamız gerekiyor. docker run yaparken name’i ilk parametre olarak kullanmalıyız. bash-it yükledik. bash ile çalışmayı çok kolaylaştırıyor. bash-it show aliases bash-it enable alias docker BASH_PREVIEW=true bash-it reload komutu ile bash-it theme’lerine göz attık. Brave web browser‘ı övdük. Daemon‘un ne olduğunu hatırladık. Bilgisayarda systemd ile çalışan servisler var. systemd, servisleri çalıştırıyor. systemctl list-unit-files grep enabled dbus, interprocess communication’ı sağlıyor. VM’i pull ettim, build ettikten sonra yapmam gereken şeyler için ENTRYPOINT’i kullanıyoruz. DNS, Language, Timezone variable’ları çok önemli! ENTRYPOINT ile VM tamamen kurulduktan, build olduktan sonra yapılacak ayarlar ve kurulacak paketler işlenir. LABEL önemli. overlay2, filesystem’i yönetmek için. Container’larla oynamak diski hemen doldurur, ayık ol. json_pp sudo visudo dedik, açılan dosyaya erhan ALL=NOPASSWD: ALL girdik, artık sudo x dedikten sonra şifre girmemize gerek yok. Bir ebedi gökçe belik kitabını okuyacağız. HOSTPORT:CONTAINERPORT. Soldaki host’a ait, sağdaki container’a ait. portainer, bizim makinedeki containerlar, ıvır-zıvırlar için güzel bir kullanıcı arayüzü sunuyor. https://raft.github.io/ Markdown’ı kullanacağız. zR ile vim’de unfold all yaptık. virbr0, virtual bridge 0 demek. loopback: hiçbiyere bağlı değil devnull gibi bir şey sadece kendisini referans gösteriyo 127.0.0.1 dışarıya açmak istemediğimiz hizmeti buna bindirecez 10, 172,192 ile başlayan ip adresleri subnet içlerinde consul, consulate’ın kısaltılmışı, gözlemliyor, etcd kullanıyor, bilgilendiriyor. DMZ. 80 ve 443 de-militarized zone public-private network ayrımını unutma ingress içeri, egress dışarı http://jodies.de/ipcalc , subnet calculator.","@type":"BlogPosting","url":"/2019/08/03/zarupa-core-devcamp-ders-notlari-gun8.html","headline":"Zarupa Core Devcamp Ders Notları (8. Gün)","dateModified":"2019-08-03T00:00:00+03:00","datePublished":"2019-08-03T00:00:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2019/08/03/zarupa-core-devcamp-ders-notlari-gun8.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Erhan Alankuş" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Erhan Alankuş</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <!--<a class="page-link" href="/about/">About</a>--><a href="https://github.com/erhanalankus"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">erhanalankus</span></a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Zarupa Core Devcamp Ders Notları (8. Gün)</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-08-03T00:00:00+03:00" itemprop="datePublished">03.08.2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="8-gün-44-ve-48-saatler-arası">8. Gün (44. ve 48. saatler arası)</h2>
+
+<p>Bugün docker ile haşır neşir olduk.</p>
+
+<p>Kendi makinalarımızda mantıklı bir dosya hiyerarşisi, bir directory yaratma stratejisi oluşturmamız iyi olur.</p>
+
+<p>~/development
+~/work</p>
+
+<p>mkdir komutu ile /x/y/z gibi bi klasör yaratacaksak, y klasörü yoksa onu da yaratsın diye -p kullanabiliriz.</p>
+
+<p>$ ne demek idi? Shell prompt demek idi.</p>
+
+<p>docker run -it hello-world komutunu girdik, açıklamalarını okuduk. -it demezsek daemon olarak çalışıyor, bir şey görmüyoruz.</p>
+
+<p>docker images komutu ile görüyoruz, docker ps ile görmüyoruz, çünkü çalıştı kapandı. docker ps -a ile görebiliyoruz.</p>
+
+<p>docker search redis deyince docker hub’da search ediyor.</p>
+
+<p>Anlamadığımız imajı kullanmamamız gerekiyor.</p>
+
+<p>docker run yaparken name’i ilk parametre olarak kullanmalıyız.</p>
+
+<p><a href="https://github.com/Bash-it/bash-it">bash-it</a> yükledik. bash ile çalışmayı çok kolaylaştırıyor.</p>
+
+<p>bash-it show aliases</p>
+
+<p>bash-it enable alias docker</p>
+
+<p>BASH_PREVIEW=true bash-it reload komutu ile bash-it theme’lerine göz attık.</p>
+
+<p><a href="https://brave.com/">Brave web browser</a>‘ı övdük.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Daemon_(computing)">Daemon</a>‘un ne olduğunu hatırladık.</p>
+
+<p>Bilgisayarda systemd ile çalışan servisler var. systemd, servisleri çalıştırıyor.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>systemctl list-unit-files</td>
+      <td>grep enabled</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>dbus, interprocess communication’ı sağlıyor.</p>
+
+<p>VM’i pull ettim, build ettikten sonra yapmam gereken şeyler için ENTRYPOINT’i kullanıyoruz.</p>
+
+<p>DNS, Language, Timezone variable’ları çok önemli!</p>
+
+<p>ENTRYPOINT ile VM tamamen kurulduktan, build olduktan sonra yapılacak ayarlar ve kurulacak paketler işlenir.</p>
+
+<p>LABEL önemli.</p>
+
+<p>overlay2, filesystem’i yönetmek için.</p>
+
+<p>Container’larla oynamak diski hemen doldurur, ayık ol.</p>
+
+<p>json_pp</p>
+
+<p>sudo visudo dedik, açılan dosyaya
+erhan ALL=NOPASSWD: ALL
+girdik, artık sudo x dedikten sonra şifre girmemize gerek yok.</p>
+
+<p>Bir ebedi gökçe belik kitabını okuyacağız.</p>
+
+<p>HOSTPORT:CONTAINERPORT. Soldaki host’a ait, sağdaki container’a ait.</p>
+
+<p>portainer, bizim makinedeki containerlar, ıvır-zıvırlar için güzel bir kullanıcı arayüzü sunuyor.</p>
+
+<p>https://raft.github.io/</p>
+
+<p>Markdown’ı kullanacağız.</p>
+
+<p>zR ile vim’de unfold all yaptık.</p>
+
+<p>virbr0, virtual bridge 0 demek.</p>
+
+<p>loopback:
+hiçbiyere bağlı değil
+devnull gibi bir şey
+sadece kendisini referans gösteriyo
+127.0.0.1
+dışarıya açmak istemediğimiz hizmeti buna bindirecez</p>
+
+<p>10, 172,192 ile başlayan ip adresleri subnet içlerinde</p>
+
+<p>consul, consulate’ın kısaltılmışı, gözlemliyor, etcd kullanıyor, bilgilendiriyor.</p>
+
+<p>DMZ. 80 ve 443 de-militarized zone</p>
+
+<p>public-private network ayrımını unutma
+ingress içeri, egress dışarı</p>
+
+<p>http://jodies.de/ipcalc , subnet calculator.</p>
+
+  </div><a class="u-url" href="/2019/08/03/zarupa-core-devcamp-ders-notlari-gun8.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <a href="https://www.codeabbey.com">
+            <img src="/assets/images/codeabbey-badge.png" alt="Code Abbey Badge" />
+          </a>            
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/erhanalankus"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">erhanalankus</span></a></li><li><a href="https://www.twitter.com/erhanalankus"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">erhanalankus</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+          <p>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
