@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-05T07:32:37+03:00</updated><id>/feed.xml</id><title type="html">Erhan Alankuş</title><subtitle>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</subtitle><entry><title type="html">Zarupa Core Devcamp Ders Notları (9. Gün)</title><link href="/2019/08/05/zarupa-core-devcamp-ders-notlari-gun9.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (9. Gün)" /><published>2019-08-05T00:00:00+03:00</published><updated>2019-08-05T00:00:00+03:00</updated><id>/2019/08/05/zarupa-core-devcamp-ders-notlari-gun9</id><content type="html" xml:base="/2019/08/05/zarupa-core-devcamp-ders-notlari-gun9.html">&lt;h2 id=&quot;9-gün-52-ve-60-saatler-arası&quot;&gt;9. Gün (52. ve 60. saatler arası)&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-17T22:20:55+03:00</updated><id>/feed.xml</id><title type="html">Erhan Alankuş</title><subtitle>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</subtitle><entry><title type="html">Zarupa Core Devcamp Ders Notları (10. Gün)</title><link href="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (10. Gün)" /><published>2019-08-17T00:00:00+03:00</published><updated>2019-08-17T00:00:00+03:00</updated><id>/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10</id><content type="html" xml:base="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html">&lt;h2 id=&quot;10-gün&quot;&gt;10. Gün&lt;/h2&gt;
+
+&lt;p&gt;Selam,&lt;/p&gt;
+
+&lt;p&gt;Bugün büyük ödevlerimizin sunumlarını yaptık. Konular şöyle idi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Relative &amp;amp; Absolute Paths&lt;/li&gt;
+  &lt;li&gt;Wget &amp;amp; Curl&lt;/li&gt;
+  &lt;li&gt;Netcat&lt;/li&gt;
+  &lt;li&gt;Ansible&lt;/li&gt;
+  &lt;li&gt;Library Management in Programming Languages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Wget’te user agent bilgisini değiştirebileceğimizi, kendimizi herhangi bir browser’mış gibi tanıtabileceğimizi gördük.&lt;/p&gt;
+
+&lt;p&gt;http://www.networkinghowtos.com/howto/change-the-user-agent-in-wget/&lt;/p&gt;
+
+&lt;p&gt;https://www.whatsmyua.info/&lt;/p&gt;
+
+&lt;p&gt;Kullandığımız araçlar zeki olmayan, basit araçlar. Bu araçlara ihtiyaçlarımızı doğru söylememiz önemli.&lt;/p&gt;
+
+&lt;p&gt;Proxy’lerden bahsettik. Bunlar aralardaki vekiller. Bir kaynağa ulaşmak isterken uğradığımız bir vekil, bize istediğimiz bilgiyi dönebilir. İnternet, devasa bir proxy’ler cenneti. CDN’lerden bahsettik.&lt;/p&gt;
+
+&lt;p&gt;Netcat ile hangi port açık, hangi port kapalı incelemeleri yaptık. Portun açık-kapalı olmasının ne demek olduğunu sorguladım. O port üzerinden gelen isteği dinleyen bir uygulama var ise, o port açıktır gibi anladım ama bu tam doğru değilmiş. Öğrenilmeli.&lt;/p&gt;
+
+&lt;p&gt;FTP’den bahsettik. Debian’ın şu adresine &lt;code class=&quot;highlighter-rouge&quot;&gt;(ftp.tr.debian.org/debian)&lt;/code&gt; hem FTP, hem HTTP ile ulaşabiliyoruz. HTTP ile ulaşırken port 80’de çalışmakta olan web sayfası ile muhattap oluyoruz. FTP ile ulaşırken bir arayüze ihtiyaç duymuyoruz.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat /etc/services | grep ftp&lt;/code&gt; komutu ile FTP portunu gördük.&lt;/p&gt;
+
+&lt;p&gt;tcpdump’ı kurcaladık.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tcpdump -D&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo tcpdump -i wlp2s0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;komutları ile ağ trafiğini gözlemledik.&lt;/p&gt;
+
+&lt;p&gt;Promiscuous Mode’dan bahsettik. Biz bu moda geçirmediysek ve ağımızı bu durumda görürsek hacklenmişiz demektir.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;curl icanhazip.com&lt;/code&gt; komutu ile IP adresimizi gördük. IP adresinden başka hiç bir şey dönmemesi güzel.&lt;/p&gt;
+
+&lt;p&gt;whoishostingthis.com sitesiyle oynadık.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo tcpdump -n -c 50 -i wlp2s0 arp&lt;/code&gt; komutu ile ARP oynamacaları yaptık. Bunu fazla yaparsak firewall bize karşı aksiyon alabilirmiş.&lt;/p&gt;
+
+&lt;p&gt;Programlama dilleri için ortak package manager olan asdf’ye göz attık.&lt;/p&gt;
+
+&lt;p&gt;Kısaca Vagrant’ı hatırladık.&lt;/p&gt;
+
+&lt;p&gt;PyCharm yükleme sorunlarıyla uğraştık.&lt;/p&gt;
+
+&lt;p&gt;Git üzerinde bolca çalıştık.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Sevgiler,&lt;/p&gt;</content><author><name></name></author><summary type="html">10. Gün Selam, Bugün büyük ödevlerimizin sunumlarını yaptık. Konular şöyle idi: Relative &amp;amp; Absolute Paths Wget &amp;amp; Curl Netcat Ansible Library Management in Programming Languages Wget’te user agent bilgisini değiştirebileceğimizi, kendimizi herhangi bir browser’mış gibi tanıtabileceğimizi gördük. http://www.networkinghowtos.com/howto/change-the-user-agent-in-wget/ https://www.whatsmyua.info/ Kullandığımız araçlar zeki olmayan, basit araçlar. Bu araçlara ihtiyaçlarımızı doğru söylememiz önemli. Proxy’lerden bahsettik. Bunlar aralardaki vekiller. Bir kaynağa ulaşmak isterken uğradığımız bir vekil, bize istediğimiz bilgiyi dönebilir. İnternet, devasa bir proxy’ler cenneti. CDN’lerden bahsettik. Netcat ile hangi port açık, hangi port kapalı incelemeleri yaptık. Portun açık-kapalı olmasının ne demek olduğunu sorguladım. O port üzerinden gelen isteği dinleyen bir uygulama var ise, o port açıktır gibi anladım ama bu tam doğru değilmiş. Öğrenilmeli. FTP’den bahsettik. Debian’ın şu adresine (ftp.tr.debian.org/debian) hem FTP, hem HTTP ile ulaşabiliyoruz. HTTP ile ulaşırken port 80’de çalışmakta olan web sayfası ile muhattap oluyoruz. FTP ile ulaşırken bir arayüze ihtiyaç duymuyoruz. cat /etc/services | grep ftp komutu ile FTP portunu gördük. tcpdump’ı kurcaladık. tcpdump -D sudo tcpdump -i wlp2s0 komutları ile ağ trafiğini gözlemledik. Promiscuous Mode’dan bahsettik. Biz bu moda geçirmediysek ve ağımızı bu durumda görürsek hacklenmişiz demektir. curl icanhazip.com komutu ile IP adresimizi gördük. IP adresinden başka hiç bir şey dönmemesi güzel. whoishostingthis.com sitesiyle oynadık. sudo tcpdump -n -c 50 -i wlp2s0 arp komutu ile ARP oynamacaları yaptık. Bunu fazla yaparsak firewall bize karşı aksiyon alabilirmiş. Programlama dilleri için ortak package manager olan asdf’ye göz attık. Kısaca Vagrant’ı hatırladık. PyCharm yükleme sorunlarıyla uğraştık. Git üzerinde bolca çalıştık. Sevgiler,</summary></entry><entry><title type="html">Zarupa Core Devcamp Ders Notları (9. Gün)</title><link href="/2019/08/05/zarupa-core-devcamp-ders-notlari-gun9.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (9. Gün)" /><published>2019-08-05T00:00:00+03:00</published><updated>2019-08-05T00:00:00+03:00</updated><id>/2019/08/05/zarupa-core-devcamp-ders-notlari-gun9</id><content type="html" xml:base="/2019/08/05/zarupa-core-devcamp-ders-notlari-gun9.html">&lt;h2 id=&quot;9-gün-52-ve-60-saatler-arası&quot;&gt;9. Gün (52. ve 60. saatler arası)&lt;/h2&gt;
 
 &lt;p&gt;Selam,&lt;/p&gt;
 
@@ -655,14 +712,4 @@ Erhan&lt;/p&gt;</content><author><name></name></author><summary type="html">Zaru
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2018-11-06/compare-results.png&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Bunu çok sevdim çünkü tutorial takip ederken kodu copy-paste yapmamak lazım, kaynaktan bakarak yazmak lazım. Bu sayede hem kodun üzerinde daha çok düşünmüş oluyoruz, hem de bu yazım aşamasında rastlanabilecek sorunlara rastlayıp çözüyoruz, yazama işini pratikleştiriyoruz. Doğru yazıp yazmadığımızın teyidini de bu sayede çok hızlı yapabiliyoruz.&lt;/p&gt;</content><author><name></name></author><summary type="html">Clipboard Compare, iki metini hızlıca karşılaştırmak için güzel bir araç.</summary></entry><entry><title type="html">Blogun İlk Yazısı</title><link href="/casual/2018/10/29/blogun-ilk-yazisi.html" rel="alternate" type="text/html" title="Blogun İlk Yazısı" /><published>2018-10-29T00:00:00+03:00</published><updated>2018-10-29T00:00:00+03:00</updated><id>/casual/2018/10/29/blogun-ilk-yazisi</id><content type="html" xml:base="/casual/2018/10/29/blogun-ilk-yazisi.html">&lt;p&gt;İlk blog postumuza hoş geldiniz.&lt;/p&gt;
-
-&lt;p&gt;Aslında ilk blogum değil. Öğrenciyken livejournal’da günlük tarzı yazılar yazıyordum. Boş şeyler yazıyordum ama benim için iyi oluyordu. Kendimi ifade etme yeteneğim gelişiyordu. O ara müzikle de uğraşıyorduk, şarkı sözü yazmaya çalışırken de faydasını görüyordum.&lt;/p&gt;
-
-&lt;p&gt;Bir başka bloga da 2014’te başlamıştım. Bizim alankus.com’da bir wordpress instance’ında bir development günlüğü, türkçe tutorial’lar, ufak tüyolar vs. yazıyordum. Baya bi yazı birikmişti orada. Ama alankus.com’u yenilememeye karar verince ve o dönem blogu yedekleyecek kadar umursamayınca o da uçtu gitti.&lt;/p&gt;
-
-&lt;p&gt;Bir süredir tekrar blog yazmaya başlamayı düşünüyordum ama bunu wordpress ile yapmak istemiyordum. Ücretsiz olarak wordpress.com’da yapsan bir sürü çirkin reklam, para verip temiz yapsan her sene domain parası, hosting parası…&lt;/p&gt;
-
-&lt;p&gt;Bu Jekyll işini farkedince çok hoşuma gitti. Ruby geliştirme ortamında çalışan bir static site generator. Post’ları .md dosyası olarak oluşturuyorum, Jekyll statik bir siteye derliyor, github’a gönderiyorum. Github’da static hosting bedava, domain de gayet güzel: &lt;a href=&quot;https://erhanalankus.github.io&quot;&gt;erhanalankus.github.io&lt;/a&gt;. Hem de https kurulumunu öğrenme işini bir tık daha ileriye erteleme imkanı sundu :)&lt;/p&gt;
-
-&lt;p&gt;Vatana millete hayırlı olsun!&lt;/p&gt;</content><author><name></name></author><summary type="html">İlk blog postumuza hoş geldiniz.</summary></entry></feed>
+&lt;p&gt;Bunu çok sevdim çünkü tutorial takip ederken kodu copy-paste yapmamak lazım, kaynaktan bakarak yazmak lazım. Bu sayede hem kodun üzerinde daha çok düşünmüş oluyoruz, hem de bu yazım aşamasında rastlanabilecek sorunlara rastlayıp çözüyoruz, yazama işini pratikleştiriyoruz. Doğru yazıp yazmadığımızın teyidini de bu sayede çok hızlı yapabiliyoruz.&lt;/p&gt;</content><author><name></name></author><summary type="html">Clipboard Compare, iki metini hızlıca karşılaştırmak için güzel bir araç.</summary></entry></feed>

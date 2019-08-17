@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Zarupa Core Devcamp Ders Notları (10. Gün) | Erhan Alankuş</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Zarupa Core Devcamp Ders Notları (10. Gün)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="10. Gün Selam, Bugün büyük ödevlerimizin sunumlarını yaptık. Konular şöyle idi: Relative &amp; Absolute Paths Wget &amp; Curl Netcat Ansible Library Management in Programming Languages Wget’te user agent bilgisini değiştirebileceğimizi, kendimizi herhangi bir browser’mış gibi tanıtabileceğimizi gördük. http://www.networkinghowtos.com/howto/change-the-user-agent-in-wget/ https://www.whatsmyua.info/ Kullandığımız araçlar zeki olmayan, basit araçlar. Bu araçlara ihtiyaçlarımızı doğru söylememiz önemli. Proxy’lerden bahsettik. Bunlar aralardaki vekiller. Bir kaynağa ulaşmak isterken uğradığımız bir vekil, bize istediğimiz bilgiyi dönebilir. İnternet, devasa bir proxy’ler cenneti. CDN’lerden bahsettik. Netcat ile hangi port açık, hangi port kapalı incelemeleri yaptık. Portun açık-kapalı olmasının ne demek olduğunu sorguladım. O port üzerinden gelen isteği dinleyen bir uygulama var ise, o port açıktır gibi anladım ama bu tam doğru değilmiş. Öğrenilmeli. FTP’den bahsettik. Debian’ın şu adresine (ftp.tr.debian.org/debian) hem FTP, hem HTTP ile ulaşabiliyoruz. HTTP ile ulaşırken port 80’de çalışmakta olan web sayfası ile muhattap oluyoruz. FTP ile ulaşırken bir arayüze ihtiyaç duymuyoruz. cat /etc/services | grep ftp komutu ile FTP portunu gördük. tcpdump’ı kurcaladık. tcpdump -D sudo tcpdump -i wlp2s0 komutları ile ağ trafiğini gözlemledik. Promiscuous Mode’dan bahsettik. Biz bu moda geçirmediysek ve ağımızı bu durumda görürsek hacklenmişiz demektir. curl icanhazip.com komutu ile IP adresimizi gördük. IP adresinden başka hiç bir şey dönmemesi güzel. whoishostingthis.com sitesiyle oynadık. sudo tcpdump -n -c 50 -i wlp2s0 arp komutu ile ARP oynamacaları yaptık. Bunu fazla yaparsak firewall bize karşı aksiyon alabilirmiş. Programlama dilleri için ortak package manager olan asdf’ye göz attık. Kısaca Vagrant’ı hatırladık. PyCharm yükleme sorunlarıyla uğraştık. Git üzerinde bolca çalıştık. Sevgiler," />
+<meta property="og:description" content="10. Gün Selam, Bugün büyük ödevlerimizin sunumlarını yaptık. Konular şöyle idi: Relative &amp; Absolute Paths Wget &amp; Curl Netcat Ansible Library Management in Programming Languages Wget’te user agent bilgisini değiştirebileceğimizi, kendimizi herhangi bir browser’mış gibi tanıtabileceğimizi gördük. http://www.networkinghowtos.com/howto/change-the-user-agent-in-wget/ https://www.whatsmyua.info/ Kullandığımız araçlar zeki olmayan, basit araçlar. Bu araçlara ihtiyaçlarımızı doğru söylememiz önemli. Proxy’lerden bahsettik. Bunlar aralardaki vekiller. Bir kaynağa ulaşmak isterken uğradığımız bir vekil, bize istediğimiz bilgiyi dönebilir. İnternet, devasa bir proxy’ler cenneti. CDN’lerden bahsettik. Netcat ile hangi port açık, hangi port kapalı incelemeleri yaptık. Portun açık-kapalı olmasının ne demek olduğunu sorguladım. O port üzerinden gelen isteği dinleyen bir uygulama var ise, o port açıktır gibi anladım ama bu tam doğru değilmiş. Öğrenilmeli. FTP’den bahsettik. Debian’ın şu adresine (ftp.tr.debian.org/debian) hem FTP, hem HTTP ile ulaşabiliyoruz. HTTP ile ulaşırken port 80’de çalışmakta olan web sayfası ile muhattap oluyoruz. FTP ile ulaşırken bir arayüze ihtiyaç duymuyoruz. cat /etc/services | grep ftp komutu ile FTP portunu gördük. tcpdump’ı kurcaladık. tcpdump -D sudo tcpdump -i wlp2s0 komutları ile ağ trafiğini gözlemledik. Promiscuous Mode’dan bahsettik. Biz bu moda geçirmediysek ve ağımızı bu durumda görürsek hacklenmişiz demektir. curl icanhazip.com komutu ile IP adresimizi gördük. IP adresinden başka hiç bir şey dönmemesi güzel. whoishostingthis.com sitesiyle oynadık. sudo tcpdump -n -c 50 -i wlp2s0 arp komutu ile ARP oynamacaları yaptık. Bunu fazla yaparsak firewall bize karşı aksiyon alabilirmiş. Programlama dilleri için ortak package manager olan asdf’ye göz attık. Kısaca Vagrant’ı hatırladık. PyCharm yükleme sorunlarıyla uğraştık. Git üzerinde bolca çalıştık. Sevgiler," />
+<link rel="canonical" href="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html" />
+<meta property="og:url" content="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html" />
+<meta property="og:site_name" content="Erhan Alankuş" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-17T00:00:00+03:00" />
+<script type="application/ld+json">
+{"description":"10. Gün Selam, Bugün büyük ödevlerimizin sunumlarını yaptık. Konular şöyle idi: Relative &amp; Absolute Paths Wget &amp; Curl Netcat Ansible Library Management in Programming Languages Wget’te user agent bilgisini değiştirebileceğimizi, kendimizi herhangi bir browser’mış gibi tanıtabileceğimizi gördük. http://www.networkinghowtos.com/howto/change-the-user-agent-in-wget/ https://www.whatsmyua.info/ Kullandığımız araçlar zeki olmayan, basit araçlar. Bu araçlara ihtiyaçlarımızı doğru söylememiz önemli. Proxy’lerden bahsettik. Bunlar aralardaki vekiller. Bir kaynağa ulaşmak isterken uğradığımız bir vekil, bize istediğimiz bilgiyi dönebilir. İnternet, devasa bir proxy’ler cenneti. CDN’lerden bahsettik. Netcat ile hangi port açık, hangi port kapalı incelemeleri yaptık. Portun açık-kapalı olmasının ne demek olduğunu sorguladım. O port üzerinden gelen isteği dinleyen bir uygulama var ise, o port açıktır gibi anladım ama bu tam doğru değilmiş. Öğrenilmeli. FTP’den bahsettik. Debian’ın şu adresine (ftp.tr.debian.org/debian) hem FTP, hem HTTP ile ulaşabiliyoruz. HTTP ile ulaşırken port 80’de çalışmakta olan web sayfası ile muhattap oluyoruz. FTP ile ulaşırken bir arayüze ihtiyaç duymuyoruz. cat /etc/services | grep ftp komutu ile FTP portunu gördük. tcpdump’ı kurcaladık. tcpdump -D sudo tcpdump -i wlp2s0 komutları ile ağ trafiğini gözlemledik. Promiscuous Mode’dan bahsettik. Biz bu moda geçirmediysek ve ağımızı bu durumda görürsek hacklenmişiz demektir. curl icanhazip.com komutu ile IP adresimizi gördük. IP adresinden başka hiç bir şey dönmemesi güzel. whoishostingthis.com sitesiyle oynadık. sudo tcpdump -n -c 50 -i wlp2s0 arp komutu ile ARP oynamacaları yaptık. Bunu fazla yaparsak firewall bize karşı aksiyon alabilirmiş. Programlama dilleri için ortak package manager olan asdf’ye göz attık. Kısaca Vagrant’ı hatırladık. PyCharm yükleme sorunlarıyla uğraştık. Git üzerinde bolca çalıştık. Sevgiler,","@type":"BlogPosting","url":"/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html","headline":"Zarupa Core Devcamp Ders Notları (10. Gün)","dateModified":"2019-08-17T00:00:00+03:00","datePublished":"2019-08-17T00:00:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Erhan Alankuş" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Erhan Alankuş</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <!--<a class="page-link" href="/about/">About</a>--><a href="https://github.com/erhanalankus"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">erhanalankus</span></a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Zarupa Core Devcamp Ders Notları (10. Gün)</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-08-17T00:00:00+03:00" itemprop="datePublished">17.08.2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="10-gün">10. Gün</h2>
+
+<p>Selam,</p>
+
+<p>Bugün büyük ödevlerimizin sunumlarını yaptık. Konular şöyle idi:</p>
+
+<ul>
+  <li>Relative &amp; Absolute Paths</li>
+  <li>Wget &amp; Curl</li>
+  <li>Netcat</li>
+  <li>Ansible</li>
+  <li>Library Management in Programming Languages</li>
+</ul>
+
+<p><br /></p>
+
+<p>Wget’te user agent bilgisini değiştirebileceğimizi, kendimizi herhangi bir browser’mış gibi tanıtabileceğimizi gördük.</p>
+
+<p>http://www.networkinghowtos.com/howto/change-the-user-agent-in-wget/</p>
+
+<p>https://www.whatsmyua.info/</p>
+
+<p>Kullandığımız araçlar zeki olmayan, basit araçlar. Bu araçlara ihtiyaçlarımızı doğru söylememiz önemli.</p>
+
+<p>Proxy’lerden bahsettik. Bunlar aralardaki vekiller. Bir kaynağa ulaşmak isterken uğradığımız bir vekil, bize istediğimiz bilgiyi dönebilir. İnternet, devasa bir proxy’ler cenneti. CDN’lerden bahsettik.</p>
+
+<p>Netcat ile hangi port açık, hangi port kapalı incelemeleri yaptık. Portun açık-kapalı olmasının ne demek olduğunu sorguladım. O port üzerinden gelen isteği dinleyen bir uygulama var ise, o port açıktır gibi anladım ama bu tam doğru değilmiş. Öğrenilmeli.</p>
+
+<p>FTP’den bahsettik. Debian’ın şu adresine <code class="highlighter-rouge">(ftp.tr.debian.org/debian)</code> hem FTP, hem HTTP ile ulaşabiliyoruz. HTTP ile ulaşırken port 80’de çalışmakta olan web sayfası ile muhattap oluyoruz. FTP ile ulaşırken bir arayüze ihtiyaç duymuyoruz.</p>
+
+<p><code class="highlighter-rouge">cat /etc/services | grep ftp</code> komutu ile FTP portunu gördük.</p>
+
+<p>tcpdump’ı kurcaladık.</p>
+
+<p><code class="highlighter-rouge">tcpdump -D</code></p>
+
+<p><code class="highlighter-rouge">sudo tcpdump -i wlp2s0</code></p>
+
+<p>komutları ile ağ trafiğini gözlemledik.</p>
+
+<p>Promiscuous Mode’dan bahsettik. Biz bu moda geçirmediysek ve ağımızı bu durumda görürsek hacklenmişiz demektir.</p>
+
+<p><code class="highlighter-rouge">curl icanhazip.com</code> komutu ile IP adresimizi gördük. IP adresinden başka hiç bir şey dönmemesi güzel.</p>
+
+<p>whoishostingthis.com sitesiyle oynadık.</p>
+
+<p><code class="highlighter-rouge">sudo tcpdump -n -c 50 -i wlp2s0 arp</code> komutu ile ARP oynamacaları yaptık. Bunu fazla yaparsak firewall bize karşı aksiyon alabilirmiş.</p>
+
+<p>Programlama dilleri için ortak package manager olan asdf’ye göz attık.</p>
+
+<p>Kısaca Vagrant’ı hatırladık.</p>
+
+<p>PyCharm yükleme sorunlarıyla uğraştık.</p>
+
+<p>Git üzerinde bolca çalıştık.</p>
+
+<p><br />
+Sevgiler,</p>
+
+  </div><a class="u-url" href="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <a href="https://www.codeabbey.com">
+            <img src="/assets/images/codeabbey-badge.png" alt="Code Abbey Badge" />
+          </a>            
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/erhanalankus"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">erhanalankus</span></a></li><li><a href="https://www.twitter.com/erhanalankus"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">erhanalankus</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+          <p>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
