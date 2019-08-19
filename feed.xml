@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-17T22:20:55+03:00</updated><id>/feed.xml</id><title type="html">Erhan Alankuş</title><subtitle>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</subtitle><entry><title type="html">Zarupa Core Devcamp Ders Notları (10. Gün)</title><link href="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (10. Gün)" /><published>2019-08-17T00:00:00+03:00</published><updated>2019-08-17T00:00:00+03:00</updated><id>/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10</id><content type="html" xml:base="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html">&lt;h2 id=&quot;10-gün&quot;&gt;10. Gün&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-19T22:11:19+03:00</updated><id>/feed.xml</id><title type="html">Erhan Alankuş</title><subtitle>Yazılımcı, elektronik sevdalısı. Burada blog yazıyor.</subtitle><entry><title type="html">Zarupa Core Devcamp Ders Notları (11. Gün)</title><link href="/2019/08/19/zarupa-core-devcamp-ders-notlari-gun11.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (11. Gün)" /><published>2019-08-19T00:00:00+03:00</published><updated>2019-08-19T00:00:00+03:00</updated><id>/2019/08/19/zarupa-core-devcamp-ders-notlari-gun11</id><content type="html" xml:base="/2019/08/19/zarupa-core-devcamp-ders-notlari-gun11.html">&lt;h2 id=&quot;11-gün&quot;&gt;11. Gün&lt;/h2&gt;
+
+&lt;p&gt;Selam,&lt;/p&gt;
+
+&lt;p&gt;Bugün bol bol Git üzerinde çalıştık.&lt;/p&gt;
+
+&lt;p&gt;Uygulama ağırlıklı bir gün oldu, pek not tutamadım.&lt;/p&gt;
+
+&lt;p&gt;Bir Flask web projesine başladık, commitler, branchler, merge requestler…&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Sevgiler,&lt;/p&gt;</content><author><name></name></author><summary type="html">11. Gün Selam, Bugün bol bol Git üzerinde çalıştık. Uygulama ağırlıklı bir gün oldu, pek not tutamadım. Bir Flask web projesine başladık, commitler, branchler, merge requestler… Sevgiler,</summary></entry><entry><title type="html">Zarupa Core Devcamp Ders Notları (10. Gün)</title><link href="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html" rel="alternate" type="text/html" title="Zarupa Core Devcamp Ders Notları (10. Gün)" /><published>2019-08-17T00:00:00+03:00</published><updated>2019-08-17T00:00:00+03:00</updated><id>/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10</id><content type="html" xml:base="/2019/08/17/zarupa-core-devcamp-ders-notlari-gun10.html">&lt;h2 id=&quot;10-gün&quot;&gt;10. Gün&lt;/h2&gt;
 
 &lt;p&gt;Selam,&lt;/p&gt;
 
@@ -696,20 +707,4 @@ Erhan&lt;/p&gt;</content><author><name></name></author><summary type="html">Zaru
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Sevgiler.&lt;/p&gt;</content><author><name></name></author><summary type="html">Anti-forgery token, çoğu zaman otomatik olarak sayfaya yerleşir ve kullanılır, fakat bazen sizin eklemeniz gerekebilir. Bu örnekteki sayfamız, herhangi bir controller action’a ulaşmayacak şekilde planlanmış bir sayfa. Fakat sonradan eklenen bir istek gereği bir controller action’a POST yapması gerekti. Bunun için bu sayfada bir anti-forgery token yaratmamız ve bu token’i yapacağımız POST request’te kullanmamız gerekiyor.</summary></entry><entry><title type="html">İki Metini Hızlıca Karşılaştırma</title><link href="/productivity/2018/11/06/clipboard-compare.html" rel="alternate" type="text/html" title="İki Metini Hızlıca Karşılaştırma" /><published>2018-11-06T00:00:00+03:00</published><updated>2018-11-06T00:00:00+03:00</updated><id>/productivity/2018/11/06/clipboard-compare</id><content type="html" xml:base="/productivity/2018/11/06/clipboard-compare.html">&lt;p&gt;Clipboard Compare, iki metini hızlıca karşılaştırmak için güzel bir araç.&lt;/p&gt;
-
-&lt;p&gt;Önce Beyond Compare’i yüklüyoruz, yükleme seçeneklerinde Clipboard Compare’in seçili olduğundan emin oluyoruz.&lt;/p&gt;
-
-&lt;p&gt;Yükleme tamamlandıktan sonra System Tray’e eklenen Clipboard Compare ikonundan Options’a girip şu ayarları yapıyoruz.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2018-11-06/clipboard-compare-options.png&quot; alt=&quot;Clipboard Compare options&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sonra karşılaştırmak istediğimiz metinleri sırayla kopyalıyoruz(Ctrl+C).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2018-11-06/texts-side-by-side.png&quot; alt=&quot;Texts to compare, side by side&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ve Ctrl+Alt+C yaptığımızda karşımıza karşılaştırma sonuçları geliyor.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2018-11-06/compare-results.png&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Bunu çok sevdim çünkü tutorial takip ederken kodu copy-paste yapmamak lazım, kaynaktan bakarak yazmak lazım. Bu sayede hem kodun üzerinde daha çok düşünmüş oluyoruz, hem de bu yazım aşamasında rastlanabilecek sorunlara rastlayıp çözüyoruz, yazama işini pratikleştiriyoruz. Doğru yazıp yazmadığımızın teyidini de bu sayede çok hızlı yapabiliyoruz.&lt;/p&gt;</content><author><name></name></author><summary type="html">Clipboard Compare, iki metini hızlıca karşılaştırmak için güzel bir araç.</summary></entry></feed>
+&lt;p&gt;Sevgiler.&lt;/p&gt;</content><author><name></name></author><summary type="html">Anti-forgery token, çoğu zaman otomatik olarak sayfaya yerleşir ve kullanılır, fakat bazen sizin eklemeniz gerekebilir. Bu örnekteki sayfamız, herhangi bir controller action’a ulaşmayacak şekilde planlanmış bir sayfa. Fakat sonradan eklenen bir istek gereği bir controller action’a POST yapması gerekti. Bunun için bu sayfada bir anti-forgery token yaratmamız ve bu token’i yapacağımız POST request’te kullanmamız gerekiyor.</summary></entry></feed>
